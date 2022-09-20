@@ -1,16 +1,15 @@
-
-#include <iostream>
-using namespace std; 
-int factorial(int n){
-    if(n == 1){
-        return n;
-    }
-    return n * factorial(n-1);
-}
-int main() {
-    int n;
-    cout <<"Enter a number: ";
+// To find factorial of given number
+#include<iostream>
+using namespace std;
+int main(){
+    int factorial=1,n;
+    int i=1;
+    cout<<"Enter number"<<endl;
     cin>>n;
-    cout<<"\nFactorial of "<<n<<" is "<<factorial(n);
+    while(i<=n){
+        factorial= factorial*i;
+        i++;
+    }
+    cout<<"factorial of "<<n<<" is "<<factorial;
     return 0;
 }
